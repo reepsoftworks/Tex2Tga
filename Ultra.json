@@ -1,0 +1,15 @@
+{
+	"currentPath": "E:/Dev/Tex2Tga/Examples/Concrete",
+	"project": {
+		"name": "Tex2Tga",
+		"templates": [
+			"C++",
+			"Common"
+		],
+		"validationLayers": {
+			"debug": [
+				"VK_LAYER_KHRONOS_validation"
+			]
+		}
+	}
+}

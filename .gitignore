@@ -1,0 +1,74 @@
+# This .gitignore is optimized for Ultra Engine Projects and is intended to be copied and modified to fit the needs of the project of it's apart of.
+
+# Visual Studio/Code:
+.vscode/**
+.vs/**
+x64/**
+*.exp
+*.pdb
+*.BuildCppClean.log
+**.recipe
+**.FileListAbsolute.txt
+*.ilk
+*.log
+*.tlog
+*.idb
+
+# XCode:
+.DS_Store
+_.DS_Store
+**/.DS_Store
+**/_.DS_Store
+Build/**
+*.dSYM
+*.plist
+*.xcactivitylog
+*.index**
+
+# Executables:
+*.exe
+*.out
+*.app
+
+# Backup folder:
+backup/**
+
+# Shader Source Code:
+# WARNING: Public sharing of shader source code violates the EULA. 
+# If this is a public repo, it's best to make a private repo just for the shaders if needed.
+# Otherwise, feel free to delete this portion at your own risk.
+*.vert 
+*.frag
+*.geom
+*.comp 
+*.tese 
+*.tesc
+*.glsl
+
+# Game Packages:
+*.zip
+*.pak
+
+# Compressed backups:
+*.7z
+*.rar
+*.tar.gz
+
+# Raw asset files:
+*.tga
+*.png
+*.bmp
+*.jpg
+*.blend*
+*.fbx
+*.tga
+
+# Ignore uneeded folders
+Fonts/
+Examples/
+Maps/
+Materials/
+Models/
+Shaders/
+Prefabs/
+Sound/
