@@ -90,6 +90,7 @@ void LoadFiles(const WString& path, std::vector<WString>& files)
 
 int main(int argc, const char* argv[])
 {
+    AsyncRender(false);
     Print("Reep Softworks - tex2tga (" + std::string(__DATE__) + ")");
 
     // Parse files from the command-line.
@@ -156,6 +157,11 @@ int main(int argc, const char* argv[])
         {
             if (basis_plugin==NULL) basis_plugin = UltraEngine::LoadPlugin(plugin_path + "/Basis");
             Assert(basis_plugin, "Error: Failed to load Basis plugin!");
+        }
+        else if (ExtractExt(in) == "ktx")
+        {
+            if (basis_plugin == NULL) basis_plugin = UltraEngine::LoadPlugin(plugin_path + "/KTX2TextureLoader");
+            Assert(basis_plugin, "Error: Failed to load KTX2 plugin!");
         }
 
         auto out = UltraEngine::StripExt(file) + "." + ext;

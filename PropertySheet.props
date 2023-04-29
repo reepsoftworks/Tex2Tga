@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <UltraEnginePath>C:/Ultra Engine</UltraEnginePath>
+    <UltraEnginePath>C:/Program Files/Ultra Engine</UltraEnginePath>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
